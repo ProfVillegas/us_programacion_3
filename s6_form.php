@@ -21,6 +21,9 @@
             </table>
         </form>
         <table id="cuentas">
+            <tr>
+                <th>N. cliente</th><th>Nombre</th><th>N. cuenta</th>
+            </tr>
         </table>
     </body>
 </html>

@@ -8,7 +8,7 @@ class Usuario{
     public $cuenta;
     
     function __construct(){
-        $this->no_cuenta="100000";
+        $this->no_cliente="100000";
         $this->nombre="Sin nombre";
         $this->ap_paterno="Sin apellido";
         $this->ap_materno="Sin apellido";
@@ -23,7 +23,7 @@ class Cuenta{
     public $sucursal;
     
     function __construct(){
-        $this->no_cuenta="100000";
+        $this->$n_cuenta="100000";
         $this->anaualidad=0;
         $this->sucursal="Desconocida";
     }
