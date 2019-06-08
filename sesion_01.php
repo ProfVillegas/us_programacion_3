@@ -1,12 +1,52 @@
 <?php
-$a="    Pacheco    ";
-$b="3";
-echo trim($a)."<br>";
-echo ltrim($a)."<br>";
-echo rtrim($a);
-echo strtolower($a);
-echo strtoupper($a);
-$parrafo="El que presenta a los derechos de el c. nombre bajo los estatutos de la ley en material penal, da como obligación al c. nombre";
-echo str_replace("nombre","Robin pachecho",$parrafo);
+$array1[]="Uva";
+$array1[]="Manzana";
+$array1[]="Durazno";
+
+print_r($array1);
+var_dump($array1);
+echo "<ul>";
+while(list($var, $val)=each($array1)){
+    echo "<li>{$var} con valor {$val}</li>";
+}
+echo "</ul>";
+
+$array2=array("Leon","Jaguar","Pantera");
+
+echo "<ul>";
+for($x=0;$x<count($array2);$x++){
+    echo "<li>{$x} - {$array2[$x]}</li>";
+}
+echo "</ul>";
+
+$array3=array('peso_mx'=>'$MX','dolar'=>'$dls');
+
+echo "<ol>";
+foreach($array3 as $index=>$valor){
+   echo "<li>{$index} - {$valor}</li>"; 
+}
+echo "</ol>";
+
+$array4[]=array("Leon","Jaguar","Pantera");
+$array4[]=array("Pastor Aleman","Boxer","chihuahua");
+$array4[]="Dr. José Domínguez";
+
+echo "<pre>";
+print_r($array4);
+echo "</pre>";
+echo "<ul>";
+foreach($array4 as $id=>$val){
+    echo "<li> <ol>";
+    if(is_array($val)){
+        foreach($val as $i=>$v){
+            echo "<li>{$i} - {$v}</li>";
+        }
+    } else {
+        echo "<li>{$val}</li>";
+    }
+        
+    echo "</ol> </li>";
+}
+echo "</ul>";
 
 ?>
