@@ -22,7 +22,7 @@
         </form>
         <table id="Cuentas">
             <tr>
-                <th>N. cliente</th><th>Nombre</th><th>N. cuenta</th>
+                <th>N. cliente</th><th>Nombre</th><th>N. cuenta</th><th>operaciones</th>
             </tr>
         </table>
         <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
@@ -32,7 +32,12 @@
                     e.preventDefault();
                     
                     //Agregar fila nueva
-                    $("#Cuentas").append($("<tr>").append("<td>-</td><td>-</td><td>-</td>"));
+                    $("#Cuentas").append($("<tr>").append("<td>-</td><td>-</td><td>-</td><td><a class='delete' href='#'>Elimiar</a></td>"));
+                });
+                
+                //Eliminar cuenta
+                $("#Cuentas").on('click','a.delete',function(){
+                    $(this).parent().parent().remove();
                 });
             });
         </script>
