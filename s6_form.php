@@ -16,7 +16,7 @@
                 </tr>
                 <tr> 
                     <td><input type="text" name="n_cuenta"></td>
-                    <td><input type="button" value="enviar" name="enviar"></td>
+                    <td><input type="button" id="btnCrear" value="Crear" name="enviar"></td>
                 </tr>
             </table>
         </form>
@@ -28,7 +28,12 @@
         <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
         <script type="text/javascript">
             $(function(){
-                $("#Cuentas").append("<tr>").append("<td></td><td></td>");
+                $("#btnCrear").click(function(e){
+                    e.preventDefault();
+                    
+                    //Agregar fila nueva
+                    $("#Cuentas").append("<tr>").append("<td>-</td><td>-</td><td>-</td>");
+                });
             });
         </script>
     </body>
