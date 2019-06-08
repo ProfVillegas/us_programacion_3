@@ -26,5 +26,10 @@
             </tr>
         </table>
         <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script type="text/javascript">
+            $(function(){
+                $("#Cuentas").append("<tr>").append("<td></td><td></td>");
+            });
+        </script>
     </body>
 </html>
