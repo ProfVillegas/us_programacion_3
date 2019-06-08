@@ -20,10 +20,11 @@
                 </tr>
             </table>
         </form>
-        <table id="cuentas">
+        <table id="Cuentas">
             <tr>
                 <th>N. cliente</th><th>Nombre</th><th>N. cuenta</th>
             </tr>
         </table>
+        <script src="jquery-3.3.1.min.js" type="text/javascript"></script>
     </body>
 </html>
