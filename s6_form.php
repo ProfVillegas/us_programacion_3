@@ -30,6 +30,15 @@
             $(function(){
                 $("#btnCrear").click(function(e){
                     e.preventDefault();
+                    //Petición AJAX
+                    $.ajax({
+                        url:"s6_controlador.php",
+                        data:$("#CrearCuenta").serialize(),
+                        type:"POST",
+                        success:function(r){
+                            console.log(r);
+                        }
+                    });
                     
                     //Agregar fila nueva
                     $("#Cuentas").append($("<tr>").append("<td>-</td><td>-</td><td>-</td><td><a class='delete' href='#'>Elimiar</a></td>"));

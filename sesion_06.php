@@ -4,7 +4,7 @@ class Usuario{
     public $nombre;
     public $ap_parterno;
     public $ap_materno;
-    public rfc;
+    public $rfc;
     public $cuenta;
     
     function __construct(){
@@ -23,7 +23,7 @@ class Cuenta{
     public $sucursal;
     
     function __construct(){
-        $this->$n_cuenta="100000";
+        $this->n_cuenta="100000";
         $this->anaualidad=0;
         $this->sucursal="Desconocida";
     }
