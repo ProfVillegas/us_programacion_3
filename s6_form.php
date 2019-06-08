@@ -32,7 +32,7 @@
                     e.preventDefault();
                     
                     //Agregar fila nueva
-                    $("#Cuentas").append("<tr>").append("<td>-</td><td>-</td><td>-</td>");
+                    $("#Cuentas").append($("<tr>").append("<td>-</td><td>-</td><td>-</td>"));
                 });
             });
         </script>
